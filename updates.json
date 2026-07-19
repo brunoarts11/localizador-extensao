@@ -1,0 +1,12 @@
+{
+  "addons": {
+    "localizador@11cipm.pmpe.br": {
+      "updates": [
+        {
+          "version": "1.0.0",
+          "update_link": "https://brunoarts11.github.io/localizador-extensao/dist/localizador-1.0.0.xpi"
+        }
+      ]
+    }
+  }
+}

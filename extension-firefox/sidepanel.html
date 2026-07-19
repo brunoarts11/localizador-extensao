@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Localizador de Documentos</title>
+<link rel="stylesheet" href="sidepanel.css" />
+</head>
+<body>
+<div class="app">
+  <header>
+    <img class="brasao" src="icons/selo.png" alt="PMPE - 201 anos" />
+    <div>
+      <div class="t1">Localizador de Documentos</div>
+      <div class="t2">11ª CIPM / PMPE · <span id="status">Pronto</span></div>
+    </div>
+    <div class="spacer"></div>
+    <button class="btn2" id="btnNew" title="Inicia uma nova conversa. Sera necessario informar o codigo de acesso novamente.">Nova conversa</button>
+  </header>
+  <div class="messages" id="messages">
+    <div class="welcome" id="welcome">
+      <img class="brasao" src="icons/selo.png" alt="PMPE - 201 anos" /><br />
+      Bem-vindo(a) ao assistente de localização de documentos da 11ª CIPM/PMPE.<br />
+      Uso restrito ao efetivo da Unidade.<br /><br />
+      Se este é seu primeiro acesso, envie o <b>código de acesso</b> fornecido pela Unidade.<br />
+      Depois é só pedir: "SUNOR nº 006", "SUNORs de FEV 2026", ou perguntar sobre o conteúdo dos documentos.
+    </div>
+  </div>
+  <div class="composer">
+    <textarea id="input" rows="1" placeholder="Digite sua mensagem ou o código de acesso..."></textarea>
+    <button class="send" id="btnSend">Enviar</button>
+  </div>
+  <footer>Assistente de IA — as respostas devem ser conferidas nos documentos oficiais.</footer>
+</div>
+<script src="sidepanel.js"></script>
+</body>
+</html>

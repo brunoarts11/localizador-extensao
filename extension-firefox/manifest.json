@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "Localizador de Documentos - 11ª CIPM/PMPE",
+  "version": "1.0.0",
+  "description": "Localize SUNORs e consulte o conteúdo dos documentos da 11ª CIPM/PMPE.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "localizador@11cipm.pmpe.br",
+      "strict_min_version": "115.0",
+      "update_url": "https://brunoarts11.github.io/localizador-extensao/updates.json"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_title": "Abrir Localizador de Documentos",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png"
+    }
+  },
+  "sidebar_action": {
+    "default_title": "Localizador de Documentos",
+    "default_panel": "sidepanel.html",
+    "default_icon": "icons/icon48.png",
+    "open_at_install": true
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": ["storage"]
+}
