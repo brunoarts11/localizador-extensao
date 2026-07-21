@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "Localizador de Documentos - 11ª CIPM/PMPE",
-  "version": "1.0.0",
-  "description": "Localize SUNORs e consulte o conteúdo dos documentos da 11ª CIPM/PMPE.",
+  "version": "1.0.1",
+  "description": "Localize SUNORs e consulte a legislacao e o conteúdo dos documentos da 11ª CIPM/PMPE.",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
