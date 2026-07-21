@@ -8,7 +8,7 @@ Extensão que abre o assistente de localização de documentos da 11ª CIPM/PMPE
 
 1. No **Firefox**, abra o link:
 
-   **https://brunoarts11.github.io/localizador-extensao/dist/localizador-1.0.0.xpi**
+   **https://brunoarts11.github.io/localizador-extensao/dist/localizador-1.0.2.xpi**
 
 2. O Firefox pergunta se permite a instalação → **Continuar** → **Adicionar**.
 3. Confirme o aviso de privacidade (a extensão **não coleta nenhum dado**).
