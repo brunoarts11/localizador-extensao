@@ -5,6 +5,10 @@
         {
           "version": "1.0.0",
           "update_link": "https://brunoarts11.github.io/localizador-extensao/dist/localizador-1.0.0.xpi"
+        },
+        {
+          "version": "1.0.2",
+          "update_link": "https://brunoarts11.github.io/localizador-extensao/dist/localizador-1.0.2.xpi"
         }
       ]
     }
