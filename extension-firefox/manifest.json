@@ -1,12 +1,12 @@
 {
   "manifest_version": 3,
   "name": "Localizador de Documentos - 11ª CIPM/PMPE",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Localize SUNORs e consulte a legislacao e o conteúdo dos documentos da 11ª CIPM/PMPE.",
   "browser_specific_settings": {
     "gecko": {
       "id": "localizador@11cipm.pmpe.br",
-      "strict_min_version": "140.0",
+      "strict_min_version": "142.0",
       "update_url": "https://brunoarts11.github.io/localizador-extensao/updates.json",
       "data_collection_permissions": {
         "required": ["none"]

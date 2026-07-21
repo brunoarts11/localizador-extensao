@@ -13,19 +13,30 @@
     await chrome.storage.local.set({ sessionId: s });
     return s;
   }
-  function esc(t) { return t.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;"); }
-  function linkify(t) { return esc(t).replace(/(https?:\/\/[^\s<]+)/g, function (u) { return '<a href="' + u + '" target="_blank" rel="noopener noreferrer">' + u + "</a>"; }); }
+  function appendLinkified(parent, text) {
+    var re = /(https?:\/\/[^\s<]+)/g;
+    var last = 0, m;
+    while ((m = re.exec(text)) !== null) {
+      if (m.index > last) parent.appendChild(document.createTextNode(text.slice(last, m.index)));
+      var a = document.createElement("a");
+      a.href = m[0]; a.target = "_blank"; a.rel = "noopener noreferrer"; a.textContent = m[0];
+      parent.appendChild(a);
+      last = m.index + m[0].length;
+    }
+    if (last < text.length) parent.appendChild(document.createTextNode(text.slice(last)));
+  }
   function add(text, cls, html) {
     if (elW) elW.style.display = "none";
     var d = document.createElement("div");
     d.className = "msg " + cls;
-    if (html) d.innerHTML = linkify(text); else d.textContent = text;
+    if (html) appendLinkified(d, text); else d.textContent = text;
     elM.appendChild(d); elM.scrollTop = elM.scrollHeight;
     return d;
   }
   function typing() {
     var d = document.createElement("div");
-    d.className = "typing"; d.innerHTML = "<span></span><span></span><span></span>";
+    d.className = "typing";
+    for (var i = 0; i < 3; i++) d.appendChild(document.createElement("span"));
     elM.appendChild(d); elM.scrollTop = elM.scrollHeight;
     return d;
   }
